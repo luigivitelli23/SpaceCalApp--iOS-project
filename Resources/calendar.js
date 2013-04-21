@@ -311,7 +311,14 @@ var calView = function(a, b, c) {
 			// newDay.backgroundImage='../libraries/calendar/pngs/monthdaytiletoday_selected.png';
 			newDay.backgroundImage = "images/cal_button_pressed.jpg";
 			var oldDay = newDay;
+
 		};
+					if(i < 20 && i > 15){
+				newDay.backgroundImage = "images/triangolo_giallo.png";
+			}
+			if (i>25 && i < 28){
+				newDay.backgroundImage = "images/triangolo_rosso.png";
+			}
 		currentGrid[i]=newDay;
 		
 		dayNumber++; 
@@ -529,6 +536,7 @@ mainView.getInformation = function(from, to , currentMounth, currentYear){
 				
 				// var arrOfDay = arr[currentYear-2000][currentMounth][i];
 				Ti.API.info(arr);
+				alert(JSON.stringify(arr));
 				if(arr[currentYear-2000][currentMounth][i].length > 0){
 					Ti.API.info('sono dentro');
 					currentGrid[i].backgroundImage="appicon.png";

@@ -1,6 +1,7 @@
 var navWindow;
 navWindow = Ti.UI.createWindow({
-    width:320 // Set the width of the sliding window to avoid cut out from animation
+    width:320, // Set the width of the sliding window to avoid cut out from animation
+    backgroundColor:'#003F6F',
 });
 	
 exports.main = function (){

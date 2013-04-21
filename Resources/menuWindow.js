@@ -169,13 +169,13 @@ var makeRadioButton = function(row){
 
 // Create the first TableViewSection
 var section1 = Ti.UI.createTableViewSection({
-    headerTitle:'Header 1',
+    headerTitle:'NASA',
 });
 // use a loop to add some rows
-for (var i=0; i < 4; i++) {
-	var row = Ti.UI.createTableViewRow({
+
+var r1 = Ti.UI.createTableViewRow({
     	height:40,
-        title:'Row '+i,
+        title:'HST',
         color:'white',
         backgroundColor: "#313649",
     	font:{
@@ -183,18 +183,110 @@ for (var i=0; i < 4; i++) {
 			fontFamily:"OpenSans",
 		},
     })
-    makeRadioButton(row);
-    section1.add(row);
-}
-// do it all again...
+makeRadioButton(r1);
+section1.add(r1);
+
+
+var r2 = Ti.UI.createTableViewRow({
+    	height:40,
+        title:'SWIFT',
+        color:'white',
+        backgroundColor: "#313649",
+    	font:{
+			size:16,
+			fontFamily:"OpenSans",
+		},
+    })
+makeRadioButton(r2);
+section1.add(r2);
+
+var r3 = Ti.UI.createTableViewRow({
+    	height:40,
+        title:'HST',
+        color:'white',
+        backgroundColor: "#313649",
+    	font:{
+			size:16,
+			fontFamily:"OpenSans",
+		},
+    })
+makeRadioButton(r3);
+section1.add(r3);
+
+var r4 = Ti.UI.createTableViewRow({
+    	height:40,
+        title:'NuSTAR',
+        color:'white',
+        backgroundColor: "#313649",
+    	font:{
+			size:16,
+			fontFamily:"OpenSans",
+		},
+    })
+makeRadioButton(r4);
+section1.add(r4);
+
+var r5 = Ti.UI.createTableViewRow({
+    	height:40,
+        title:'Chandra',
+        color:'white',
+        backgroundColor: "#313649",
+    	font:{
+			size:16,
+			fontFamily:"OpenSans",
+		},
+    })
+makeRadioButton(r5);
+section1.add(r5);
+
+var r6 = Ti.UI.createTableViewRow({
+    	height:40,
+        title:'RXTE',
+        color:'white',
+        backgroundColor: "#313649",
+    	font:{
+			size:16,
+			fontFamily:"OpenSans",
+		},
+    })
+makeRadioButton(r6);
+section1.add(r6);
+
+var r7 = Ti.UI.createTableViewRow({
+    	height:40,
+        title:'Spitzer',
+        color:'white',
+        backgroundColor: "#313649",
+    	font:{
+			size:16,
+			fontFamily:"OpenSans",
+		},
+    })
+makeRadioButton(r7);
+section1.add(r7);
+
+var r8 = Ti.UI.createTableViewRow({
+    	height:40,
+        title:'FERMI',
+        color:'white',
+        backgroundColor: "#313649",
+    	font:{
+			size:16,
+			fontFamily:"OpenSans",
+		},
+    })
+makeRadioButton(r8);
+section1.add(r8);
+
 var section2 = Ti.UI.createTableViewSection({
-    headerTitle: 'Section 2',
+    headerTitle: 'ESA',
 
 });
-for (var i=4; i < 10; i++) {
-	var row = Ti.UI.createTableViewRow({
+
+
+	var row11 = Ti.UI.createTableViewRow({
     	height:40,
-        title:'Row '+i,
+        title:'XMM-Newton',
         color:'white',
         backgroundColor: "#313649",
        	font:{
@@ -202,9 +294,36 @@ for (var i=4; i < 10; i++) {
 			fontFamily:"OpenSans",
 		},
     })
-    makeRadioButton(row);
-    section2.add(row);
-}
+    makeRadioButton(row11);
+    section2.add(row11);
+    
+    	var row12 = Ti.UI.createTableViewRow({
+    	height:40,
+        title:'INTEGRAL',
+        color:'white',
+        backgroundColor: "#313649",
+       	font:{
+			size:16,
+			fontFamily:"OpenSans",
+		},
+    })
+    makeRadioButton(row12);
+    section2.add(row12);
+    
+    	var row13 = Ti.UI.createTableViewRow({
+    	height:40,
+        title:'Herchel',
+        color:'white',
+        backgroundColor: "#313649",
+       	font:{
+			size:16,
+			fontFamily:"OpenSans",
+		},
+    })
+    makeRadioButton(row13);
+    section2.add(row13);
+    
+
 // Now, here's our table, and we're setting the data to hold the sections
 var tv = Ti.UI.createTableView({
     data:[section1,section2],
